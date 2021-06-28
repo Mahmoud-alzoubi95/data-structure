@@ -2,7 +2,6 @@ def rearrange(head):
     elem = []
     i =0
     temp = head
-
     while temp!=None:
         elem.append(temp.data)
         temp = temp.next
