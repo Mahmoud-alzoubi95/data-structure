@@ -40,6 +40,32 @@ class Linkedlist:
       self.appen(i)
 
 
+  def rearrange(self):
+      elem = []
+      i =0
+      temp = self.head
+
+      while temp:
+          elem.append(temp.data)
+          temp = temp.next
+      print(temp)
+
+      if len(elem):
+          return
+
+      temp = self.head
+      while len(elem)>0:
+          if i%2 == 0:
+              temp.data = elem[0]
+              elem.pop(0)
+
+          else:
+              temp.data = elem[-1]
+              elem.pop()
+          i+=1
+          temp = temp.next
+
+
   def __str__(self):
     current= self.head
     list=""
@@ -51,32 +77,7 @@ class Linkedlist:
 
 
 "**************************** Rearrange *****************************"
-def rearrange(List1):
-    elem = []
-    i =0
-    temp = List1.head
 
-    while temp != None:
-        elem.append(temp.data)
-        temp = temp.next
-    print(temp)
-
-    if len(elem):
-        return
-
-    temp = List1
-    while len(elem)>0:
-        if i%2==0:
-            temp.data = elem[0]
-            elem.pop(0)
-
-        else:
-            temp.data = elem[-1]
-            elem.pop()
-        i+=1
-        temp = temp.next
-    # print(List1)
-    return List1
 
 
 if __name__=="__main__":
@@ -98,6 +99,7 @@ if __name__=="__main__":
   M.appen("2")
   M.appen("1")
   print(M)
+  M.rearrange()
  
 
   # print(rearrange(M))
