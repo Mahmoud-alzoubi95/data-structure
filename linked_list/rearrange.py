@@ -23,5 +23,3 @@ def rearrange(head):
         temp = temp.next
 
     return head
-
-
