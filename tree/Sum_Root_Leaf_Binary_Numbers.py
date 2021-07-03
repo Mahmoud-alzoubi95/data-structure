@@ -6,12 +6,14 @@ Explanation: (100) + (101) + (110) + (111) = 4 + 5 + 6 + 7 = 22
 
 """
 
-def sumRootToLeaf(self, root: TreeNode) -> int:
+def sumRootToLeaf(root):
+
     root_to_leaf = 0
     stack = [(root, 0) ]
     
     while stack:
-        root, curr_number = stack.pop()
+        curr_number = stack.pop()
+        
         if root is not None:
             curr_number = (curr_number << 1) | root.val
             # if it's a leaf, update root-to-leaf sum
