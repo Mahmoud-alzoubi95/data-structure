@@ -1,7 +1,6 @@
 
 # If both trees are empty, then they are mirror images
 
-
 def isMirror(root1, root2):
     if root1 is None and root2 is None:
         return True
