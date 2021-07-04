@@ -1,3 +1,8 @@
+    """
+    input:(tree,int)
+    """
+
+
 def hasPathSum(node, s):
         ans = 0
         subSum = s - node.data

@@ -14,7 +14,7 @@ And the value to search: 2'''
     1   3
 
     """
-def searchBST(self, root, val):
+def searchBST(root, val):
     
     while(root):
         if root.val == val:

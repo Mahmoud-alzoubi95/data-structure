@@ -10,7 +10,7 @@
 def mergetrees(t1,t2):
     if not t1 and t2:
         return t2
-        
+
     if not t2 and t1:
         return t1
 
@@ -39,36 +39,37 @@ def mergetrees(t1,t2):
 def MergeTrees(t1, t2):
  
     if (not t1):
-        return t2;
+        return t2
     if (not t2):
-        return t1;
+        return t1
     s = []
      
     temp = snode(t1, t2)
      
-    s.append(temp);
+    s.append(temp)
     n = None
      
     while (len(s) != 0):
      
         n = s[-1]
-        s.pop();
+        s.pop()
          
         if (n.l == None or n.r == None):
-            continue;
+            continue
              
-        n.l.data += n.r.data;
+        n.l.data += n.r.data
         if (n.l.left == None):
-            n.l.left = n.r.left;
+            n.l.left = n.r.left
+            
         else:
             t=snode(n.l.left, n.r.left)
-            s.append(t);
+            s.append(t)
          
         if (n.l.right == None):
-            n.l.right = n.r.right;
+            n.l.right = n.r.right
+
         else:
- 
             t=snode(n.l.right, n.r.right)
-            s.append(t);
+            s.append(t)
          
-    return t1;
+    return t1
