@@ -26,7 +26,6 @@ def identical(root1,root2):
     if root1 and not root2:
         return False
 
-
     Q1.append(root1)
     Q2.append(root2)
 

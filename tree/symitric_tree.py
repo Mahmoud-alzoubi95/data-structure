@@ -4,6 +4,7 @@
 # root1 and root 1 the same tree
 
 def isMirror(root1, root2):
+   
     if root1 is None and root2 is None:
         return True
         
