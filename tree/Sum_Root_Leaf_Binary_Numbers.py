@@ -22,5 +22,5 @@ def sumRootToLeaf(root):
             else:
                 stack.append((root.right, curr_number))
                 stack.append((root.left, curr_number))
-                    
+
     return root_to_leaf

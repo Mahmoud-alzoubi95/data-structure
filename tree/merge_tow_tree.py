@@ -10,6 +10,7 @@
 def mergetrees(t1,t2):
     if not t1 and t2:
         return t2
+        
     if not t2 and t1:
         return t1
 

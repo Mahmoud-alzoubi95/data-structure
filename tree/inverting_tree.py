@@ -1,4 +1,5 @@
 
+
 def invert_tree(root):
     if not root:
         return
